@@ -41,14 +41,33 @@ section.about .animation {
   padding: 3rem 3rem 3rem 3rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   section.about .animation {
     display: none;
   }
 
+  section.about {
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  
+section.about .avatar {
+    width: 200px;
+  }
+
+  
+section.about h2.title {
+    font-size: 1.6rem;
+    
+  }
+  
+
   section.about p.subtitle {
+    width: 250px;
     font-size: 1.5rem;
-    line-height: 2rem;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
     padding-right: 2rem;
   }
 }
