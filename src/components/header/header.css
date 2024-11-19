@@ -1,0 +1,131 @@
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.5rem;
+}
+
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.8rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 15px var(--purple);
+}
+
+header ul.flex {
+  gap: 30px;
+}
+
+header ul li a {
+  color: var(--title);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+header ul li a:hover {
+  color: var(--purple);
+  transition: 0.5s;
+}
+
+header button {
+  font-size: 1.2rem;
+}
+
+/**************************************************************************************************/
+
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgb(40, 40, 48, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+header .icon-close {
+  font-size: 1.5rem;
+  color: rgb(214, 214, 214);
+  transition: 0.4s;
+}
+
+header .icon-close:hover {
+  font-size: 1.8rem;
+  color: rgb(255, 0, 0);
+}
+
+header .icon-menu,
+header button.mode {
+  color: var(--subtitle);
+  background-color: var(--bgHeader);
+  width: 2.4rem;
+  height: 2.4rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgb(111, 111, 111);
+}
+
+header .icon-menu:hover,
+header button.mode:hover {
+  transition: 0.3s;
+  color: var(--purple);
+  box-shadow: 1px 1px 15px var(--purple);
+}
+
+/**********************************************************************************************/
+
+@keyframes move {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.model {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+  box-shadow: 1px 1px 15px var(--purple);
+  animation: move 0.5s 1;
+}
+
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+header .fixed ul.model li:last-child {
+  border: none;
+}
+
+header .fixed ul.model li:first-child {
+  text-align: right;
+  border: none;
+
+  padding-bottom: 0;
+  padding-top: 0.8rem;
+}
+
+header .fixed ul.model li a {
+  font-size: 1.2rem;
+}
+
+header button.menu {
+  display: none;
+}
+/******************************************************************************************************/
+
+@media (max-width: 850px) {
+  header.flex nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
+}

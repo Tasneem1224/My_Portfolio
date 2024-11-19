@@ -1,0 +1,46 @@
+section.hero {
+  margin-top: 3rem;
+}
+
+section.hero .lsection {
+  flex-grow: 1;
+}
+
+section.hero .avatar {
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+/**************************************************************************************/
+
+section.hero h1.title {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  margin: 24px 0;
+  color: var(--title);
+}
+
+section.hero p.subtitle {
+  line-height: 2rem;
+  margin: 24px 0;
+  color: var(--subtitle);
+  margin-bottom: 32px;
+}
+
+section.hero .allicons {
+  font-size: 1.5rem;
+  gap: 1.5rem;
+
+  color: var(--subtitle);
+}
+
+section.hero .allicons .icon:hover {
+  color: var(--purple);
+  transition: 0.5s;
+}
+
+section.hero .animation {
+  width: 100rem;
+  padding: 3rem 3rem 3rem 3rem;
+}

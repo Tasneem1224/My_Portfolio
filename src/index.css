@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #000;
+  --secondary: rgb(24, 24, 27);
+  --border: rgb(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 245);
+  --subtitle: rgb(161, 161, 170);
+  --bgHeader: rgb(57, 57, 57);
+  --purple: rgb(201, 96, 254);
+}
+
+.light {
+  --primary: rgb(232, 232, 232);
+  --secondary: rgb(255, 255, 255);
+  --border: rgba(198, 198, 198, 0.4);
+  --title: rgb(0, 0, 0);
+  --subtitle: rgb(39, 39, 39);
+  --bgHeader: rgb(255, 255, 255);
+  --purple: rgb(201, 96, 254);
+}
+
+body {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-family: poppins;
+}
+
+.cont {
+  background-color: var(--secondary);
+  border: 2px solid var(--border);
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 4rem;
+}
+
+.divider {
+  border-bottom: 1px solid var(--border);
+
+  margin: 2rem 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  all: unset;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  scale: 0.85;
+}
+
+/*
+@media (max-width:500px) {
+  .cont{
+    width: 94%;
+  }
+  
+}*/

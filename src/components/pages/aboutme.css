@@ -1,0 +1,54 @@
+section.about {
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+section.about .info {
+  flex-grow: 1;
+}
+
+section.about .info0 {
+  margin-top: 90px;
+}
+
+section.about .avatar {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+/***********************************************************************/
+
+section.about h2.title {
+  font-size: 1.8rem;
+  line-height: 3.3rem;
+  margin: 30px 0;
+  color: var(--title);
+}
+
+section.about p.subtitle {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: var(--subtitle);
+  margin-bottom: 50px;
+}
+
+/***************************************************/
+
+section.about .animation {
+  width: 40rem;
+  margin-top: 20 rem;
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+@media (max-width: 1000px) {
+  section.about .animation {
+    display: none;
+  }
+
+  section.about p.subtitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-right: 2rem;
+  }
+}
