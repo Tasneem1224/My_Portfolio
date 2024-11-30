@@ -33,4 +33,11 @@ footer .rights {
   footer ul.flex {
     gap: 20px;
   }
+  footer ul li a {
+    font-size: 0.8rem;
+  }
+
+  footer .rights {
+    font-size: 0.7rem;
+  }
 }

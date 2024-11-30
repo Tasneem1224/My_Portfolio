@@ -87,14 +87,16 @@ main section.rsection.flex {
 
 .card .box .likebtn:hover {
   color: var(--purple);
-  font-size: 1.4rem;
+}
+
+.card .box .likeic {
+  margin-left: -12px;
 }
 
 .card img {
   width: 270px;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
-
 /**************************************************************Fullscreen*************************************************************/
 
 @keyframes move {
@@ -124,12 +126,13 @@ main section.rsection.flex {
   max-width: 90%;
   max-height: 90%;
 }
-
 .fullscreen .icon-close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
   font-size: 2.5rem;
   color: rgb(214, 214, 214);
   transition: 0.4s;
-  margin-left: 2rem;
 }
 
 .fullscreen .icon-close:hover {
@@ -138,7 +141,6 @@ main section.rsection.flex {
 }
 
 /******************************************************Comment section******************************************************************/
-
 .fullscreen .commentsection {
   width: 30%;
   margin-top: 10px;
@@ -169,6 +171,16 @@ main section.rsection.flex {
   background-color: var(--bgHeader);
 }
 
+.fullscreen .commentsection .commentslist .comment {
+  margin-bottom: 15px;
+}
+
+.fullscreen .commentsection .commentslist .comment-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; /
+}
+
 .fullscreen .commentsection .commentslist .deletecomment {
   color: var(--title);
   font-size: 1rem;
@@ -182,7 +194,6 @@ main section.rsection.flex {
 
 .fullscreen .commentsection .commentslist hr {
   border-bottom: 1px solid var(--border);
-
   margin: 1rem;
 }
 
@@ -200,28 +211,30 @@ main section.rsection.flex {
   transition: 0.3s;
   font-size: 1.4rem;
   padding: 1rem;
+  margin-bottom: -30px;
 }
 
 .fullscreen .commentsection .addcomment {
+  align-self: center;
+
   margin-top: 1rem;
   border-radius: 10px;
-  width: 11rem;
+  width: 150px;
+  height: 30px;
   padding: 0.75rem 0;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
   opacity: 0.5;
   transition: 0.5s;
-
   color: var(--subtitle);
   background-color: var(--bgHeader);
-
   border: 1px solid rgb(111, 111, 111);
+  margin-bottom: 30px;
 }
 
 .fullscreen .commentsection .addcomment:hover {
   font-weight: bold;
-
   opacity: 1;
   color: var(--title);
   border: 1px solid var(--purple);
@@ -244,8 +257,14 @@ main section.rsection.flex {
     align-items: center;
   }
 
+  .fullscreen .icon-close {
+    top: 50px;
+    right: 30px;
+  }
+
   .fullscreen-img {
-    max-width: 70%;
+    max-width: 80%;
+    margin-bottom: 50px;
   }
 
   .fullscreen .commentsection {
@@ -275,11 +294,13 @@ main section.rsection.flex {
     box-shadow: 1px 1px 10px var(--purple);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    width: 100%;
+    width: 88%;
     height: 50px;
     border-radius: 5px;
     transition: 0.3s;
     font-size: 1.3rem;
+    margin-bottom: -30px;
+    padding: 1rem;
   }
 
   .fullscreen .commentsection .addcomment {

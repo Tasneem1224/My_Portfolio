@@ -148,11 +148,12 @@ const Projects = () => {
                   {likes[activeContent]?.[card.id] ? (
                     <div style={{ display: "flex", alignItems: "center" }}>
                       <Lottie
+                        className="likeic"
                         animationData={Like}
                         loop={true}
                         style={{ width: 50, height: 50 }}
                       />
-                      Liked
+                      Like
                     </div>
                   ) : (
                     "Like"
@@ -165,24 +166,25 @@ const Projects = () => {
       </section>
 
       {/****************************************************************************************************************** */}
-
       {fullScreenImg && (
         <div className="fullscreen">
           <div className="commentsection">
             <div className="commentslist">
               {(comments[fullScreenImg] || []).map((comm, index) => (
-                <p className="comment" key={index}>
+                <div className="comment" key={index}>
+                  <div className="comment-header">
+                    <span>Comment {index + 1}</span>
+                    <button
+                      className="deletecomment"
+                      onClick={() => handleDeleteComment(fullScreenImg, index)}
+                    >
+                      Delete
+                    </button>
+                  </div>
+
+                  <p>{comm}</p>
                   <hr />
-                  Comment {index + 1} <br />
-                  {comm}
-                  <br />
-                  <button
-                    className="deletecomment"
-                    onClick={() => handleDeleteComment(fullScreenImg, index)}
-                  >
-                    Delete
-                  </button>
-                </p>
+                </div>
               ))}
             </div>
 
@@ -193,7 +195,7 @@ const Projects = () => {
             />
 
             <button className="addcomment" onClick={handleSendComment}>
-              Send Comment
+              Send
             </button>
           </div>
 

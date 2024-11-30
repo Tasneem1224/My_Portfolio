@@ -95,6 +95,8 @@ section.contactme .animation {
   margin-top: -5rem;
 }
 
+/******************************************************************************************************/
+
 @media (max-width: 1000px) {
   section.contactme .animation {
     display: none;
@@ -112,11 +114,27 @@ section.contactme .animation {
     margin-top: 1rem;
   }
 
+  .contactme {
+    margin-left: -70px;
+  }
+
+  section.contactme .title {
+    font-size: 1.5rem;
+  }
+
+  section.contactme label {
+    font-size: 1.2rem;
+  }
   section.contactme #email,
   section.contactme #message {
-    width: 95%;
-    margin-left: 0;
+    width: 350px;
+    height: 30px;
     padding: 0.5rem 0;
+    margin-left: -10px;
     margin-top: 1rem;
+  }
+
+  section.contactme .submit {
+    margin-top: 2rem;
   }
 }

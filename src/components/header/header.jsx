@@ -18,8 +18,6 @@ const Header = () => {
     }
   }, [theme]);
 
-  /******************************************************************************* */
-
   return (
     <header className="flex">
       <button
@@ -62,8 +60,6 @@ const Header = () => {
         )}
       </button>
 
-      {/********************************************************************** */}
-
       {showMenu && (
         <div className="fixed">
           <ul className="model">
@@ -76,13 +72,34 @@ const Header = () => {
               />
             </li>
             <li>
-              <Link to="/about">About Me</Link>
+              <Link
+                to="/about"
+                onClick={() => {
+                  setshowMenu(false);
+                }}
+              >
+                About Me
+              </Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link
+                to="/projects"
+                onClick={() => {
+                  setshowMenu(false);
+                }}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link
+                to="/contact"
+                onClick={() => {
+                  setshowMenu(false);
+                }}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -90,4 +107,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;

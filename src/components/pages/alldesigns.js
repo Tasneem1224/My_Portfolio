@@ -97,6 +97,18 @@ const allDesignsData = [
       description: "This is a sample description for Design",
       imgSrc: "/34.jpg",
     },
+    {
+      id: 17,
+      title: "Social Media",
+      description: "This is a sample description for Design",
+      imgSrc: "/112.jpg",
+    },
+    {
+      id: 18,
+      title: "File",
+      description: "This is a sample description for Design",
+      imgSrc: "/32.jpg",
+    },
   ];
   
   export default allDesignsData;

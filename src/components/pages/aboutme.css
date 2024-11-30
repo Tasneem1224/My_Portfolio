@@ -22,7 +22,7 @@ section.about .avatar {
 section.about h2.title {
   font-size: 1.8rem;
   line-height: 3.3rem;
-  margin: 30px 0;
+  margin: 10px 0;
   color: var(--title);
 }
 
@@ -37,7 +37,7 @@ section.about p.subtitle {
 
 section.about .animation {
   width: 40rem;
-  margin-top: 20 rem;
+  margin-top: 20rem;
   padding: 3rem 3rem 3rem 3rem;
 }
 
@@ -48,25 +48,21 @@ section.about .animation {
 
   section.about {
     margin-top: 3rem;
-    margin-left: 1rem;
+    margin-left: -1rem;
   }
 
-  
-section.about .avatar {
+  section.about .avatar {
     width: 200px;
   }
 
-  
-section.about h2.title {
+  section.about h2.title {
     font-size: 1.6rem;
-    
   }
-  
 
   section.about p.subtitle {
     width: 250px;
     font-size: 1.3rem;
-    word-wrap: break-word; 
+    word-wrap: break-word;
     overflow-wrap: break-word;
     padding-right: 2rem;
   }
