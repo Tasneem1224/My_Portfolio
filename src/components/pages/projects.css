@@ -258,13 +258,16 @@ main section.rsection.flex {
   }
 
   .fullscreen .icon-close {
-    top: 50px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+
+    
   }
 
   .fullscreen-img {
     max-width: 80%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .fullscreen .commentsection {
@@ -298,7 +301,7 @@ main section.rsection.flex {
     height: 50px;
     border-radius: 5px;
     transition: 0.3s;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: -30px;
     padding: 1rem;
   }

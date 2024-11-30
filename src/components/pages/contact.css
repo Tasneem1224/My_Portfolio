@@ -127,14 +127,17 @@ section.contactme .animation {
   }
   section.contactme #email,
   section.contactme #message {
-    width: 350px;
-    height: 30px;
-    padding: 0.5rem 0;
+    width: 270px;
+    height: 27px;
+    padding: 0.5rem 1rem;
     margin-left: -10px;
     margin-top: 1rem;
+    font-size: 1rem;
   }
 
   section.contactme .submit {
     margin-top: 2rem;
+    align-self: center;
+
   }
 }
